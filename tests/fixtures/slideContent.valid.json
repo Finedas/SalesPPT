@@ -1,0 +1,197 @@
+{
+  "deck_template_version": "SALES_PPT_V1",
+  "slides": [
+    {
+      "slide_number": 1,
+      "placeholder_id": "SLIDE_01_EXEC_SUMMARY",
+      "title": "Executive Summary",
+      "subtitle": "Why this opportunity matters now",
+      "bullets": [
+        "Revenue team wants consistent deal coaching",
+        "Managers need fast call insight in each stage",
+        "Pilot indicates better prep and alignment"
+      ],
+      "proof_point": "Pilot cohort showed 18% faster deal reviews.",
+      "speaker_notes": "This opening slide frames the urgency and expected value for leadership. The central issue is inconsistent coaching quality across teams, which drives uneven win rates and poor forecast confidence. We position this initiative as an operational upgrade, not a tool purchase, and align outcomes to revenue execution. The pilot signal, while early, gives us directional proof that review cycles can speed up when call insights are structured and easy to act on.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Executive Summary",
+        "SUBTITLE": "Why this opportunity matters now",
+        "BULLET_1": "Revenue team wants consistent deal coaching",
+        "BULLET_2": "Managers need fast call insight in each stage",
+        "BULLET_3": "Pilot indicates better prep and alignment",
+        "PROOF_POINT": "Pilot cohort showed 18% faster deal reviews.",
+        "SPEAKER_NOTES": "This opening slide frames the urgency and expected value for leadership. The central issue is inconsistent coaching quality across teams, which drives uneven win rates and poor forecast confidence. We position this initiative as an operational upgrade, not a tool purchase, and align outcomes to revenue execution. The pilot signal, while early, gives us directional proof that review cycles can speed up when call insights are structured and easy to act on.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 2,
+      "placeholder_id": "SLIDE_02_PROBLEM",
+      "title": "Customer Problem",
+      "subtitle": "Deal risk is hidden in unstructured calls",
+      "bullets": [
+        "Discovery notes vary by rep and manager",
+        "Objections are documented too late",
+        "Critical risk signals are hard to track"
+      ],
+      "proof_point": "Reference manager noted missed objections in 4 of 10 deals.",
+      "speaker_notes": "Here we isolate the workflow pain that prevents predictable execution. When notes are inconsistent, coaching happens late and objections are surfaced after momentum is lost. We show how this creates avoidable friction between managers and reps, especially in active quarters where review time is constrained. The reference manager example demonstrates that the problem is repeated and measurable in daily operations, not a one-off anecdote from a single account.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Customer Problem",
+        "SUBTITLE": "Deal risk is hidden in unstructured calls",
+        "BULLET_1": "Discovery notes vary by rep and manager",
+        "BULLET_2": "Objections are documented too late",
+        "BULLET_3": "Critical risk signals are hard to track",
+        "PROOF_POINT": "Reference manager noted missed objections in 4 of 10 deals.",
+        "SPEAKER_NOTES": "Here we isolate the workflow pain that prevents predictable execution. When notes are inconsistent, coaching happens late and objections are surfaced after momentum is lost. We show how this creates avoidable friction between managers and reps, especially in active quarters where review time is constrained. The reference manager example demonstrates that the problem is repeated and measurable in daily operations, not a one-off anecdote from a single account.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 3,
+      "placeholder_id": "SLIDE_03_SOLUTION",
+      "title": "Solution Overview",
+      "subtitle": "Transform transcripts into guided actions",
+      "bullets": [
+        "Extract stage-specific risks automatically",
+        "Summarize customer priorities in plain language",
+        "Recommend next-step coaching prompts"
+      ],
+      "proof_point": "Internal benchmark found 22% fewer manual prep steps.",
+      "speaker_notes": "This slide explains the functional path from raw conversations to better decisions. We emphasize automation where managers currently spend manual effort and clarify that the output supports human judgment rather than replacing it. The workflow starts with transcript ingestion, then structured extraction, and finally action prompts aligned to pipeline stages. Internal benchmarking indicates teams can reduce repetitive prep tasks, which creates more time for strategic coaching before high-stakes customer meetings.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Solution Overview",
+        "SUBTITLE": "Transform transcripts into guided actions",
+        "BULLET_1": "Extract stage-specific risks automatically",
+        "BULLET_2": "Summarize customer priorities in plain language",
+        "BULLET_3": "Recommend next-step coaching prompts",
+        "PROOF_POINT": "Internal benchmark found 22% fewer manual prep steps.",
+        "SPEAKER_NOTES": "This slide explains the functional path from raw conversations to better decisions. We emphasize automation where managers currently spend manual effort and clarify that the output supports human judgment rather than replacing it. The workflow starts with transcript ingestion, then structured extraction, and finally action prompts aligned to pipeline stages. Internal benchmarking indicates teams can reduce repetitive prep tasks, which creates more time for strategic coaching before high-stakes customer meetings.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 4,
+      "placeholder_id": "SLIDE_04_DIFFERENTIATION",
+      "title": "Why We Win",
+      "subtitle": "Built for sales execution, not generic AI",
+      "bullets": [
+        "Stage-aware output format for pipeline reviews",
+        "Grounded only in transcript evidence",
+        "Template-ready deck payload for GTM teams"
+      ],
+      "proof_point": "Analyst briefing highlighted transcript-native specialization.",
+      "speaker_notes": "Differentiation is framed around execution fit and reliability. Generic summarizers create text, but sales leaders need repeatable structures aligned to operating rhythms. We call out stage awareness and evidence grounding as core strengths because they reduce noisy output and support trust in adoption. The analyst feedback adds credible qualitative validation that this approach is distinct in positioning and practical for organizations that need consistency across regions and manager cohorts.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Why We Win",
+        "SUBTITLE": "Built for sales execution, not generic AI",
+        "BULLET_1": "Stage-aware output format for pipeline reviews",
+        "BULLET_2": "Grounded only in transcript evidence",
+        "BULLET_3": "Template-ready deck payload for GTM teams",
+        "PROOF_POINT": "Analyst briefing highlighted transcript-native specialization.",
+        "SPEAKER_NOTES": "Differentiation is framed around execution fit and reliability. Generic summarizers create text, but sales leaders need repeatable structures aligned to operating rhythms. We call out stage awareness and evidence grounding as core strengths because they reduce noisy output and support trust in adoption. The analyst feedback adds credible qualitative validation that this approach is distinct in positioning and practical for organizations that need consistency across regions and manager cohorts.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 5,
+      "placeholder_id": "SLIDE_05_PROOF",
+      "title": "Proof and Validation",
+      "subtitle": "Evidence from pilot and customer signals",
+      "bullets": [
+        "Pilot users reported better meeting readiness",
+        "Reference account expanded scope after trial",
+        "Managers cited clearer objection handling"
+      ],
+      "proof_point": "Reference customer renewed and increased seats by 30%.",
+      "speaker_notes": "This section consolidates both numeric and qualitative proof. The goal is to establish enough confidence for a scaled pilot without overclaiming beyond what the data supports. We use seat expansion as a concrete indicator of perceived value and pair it with user-reported workflow outcomes. Together these signals show traction across economic and operational dimensions, which supports a prudent next decision while preserving credibility with risk-conscious stakeholders.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Proof and Validation",
+        "SUBTITLE": "Evidence from pilot and customer signals",
+        "BULLET_1": "Pilot users reported better meeting readiness",
+        "BULLET_2": "Reference account expanded scope after trial",
+        "BULLET_3": "Managers cited clearer objection handling",
+        "PROOF_POINT": "Reference customer renewed and increased seats by 30%.",
+        "SPEAKER_NOTES": "This section consolidates both numeric and qualitative proof. The goal is to establish enough confidence for a scaled pilot without overclaiming beyond what the data supports. We use seat expansion as a concrete indicator of perceived value and pair it with user-reported workflow outcomes. Together these signals show traction across economic and operational dimensions, which supports a prudent next decision while preserving credibility with risk-conscious stakeholders.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 6,
+      "placeholder_id": "SLIDE_06_BUSINESS_IMPACT",
+      "title": "Business Impact",
+      "subtitle": "Expected upside across revenue operations",
+      "bullets": [
+        "Increase consistency in manager coaching",
+        "Shorten prep cycle for weekly deal reviews",
+        "Improve forecast confidence with shared facts"
+      ],
+      "proof_point": "Benchmark model projects 12% less manager prep time.",
+      "speaker_notes": "We translate feature output into operating impact that leadership tracks. The expected benefits center on consistency, time recovery, and better decision quality in pipeline governance. By reducing ad hoc prep, managers can spend more effort on high-value interventions. Forecast quality improves when teams align on the same source evidence from customer conversations. The benchmark projection provides an initial quantifiable target for pilot success criteria and accountability during rollout.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Business Impact",
+        "SUBTITLE": "Expected upside across revenue operations",
+        "BULLET_1": "Increase consistency in manager coaching",
+        "BULLET_2": "Shorten prep cycle for weekly deal reviews",
+        "BULLET_3": "Improve forecast confidence with shared facts",
+        "PROOF_POINT": "Benchmark model projects 12% less manager prep time.",
+        "SPEAKER_NOTES": "We translate feature output into operating impact that leadership tracks. The expected benefits center on consistency, time recovery, and better decision quality in pipeline governance. By reducing ad hoc prep, managers can spend more effort on high-value interventions. Forecast quality improves when teams align on the same source evidence from customer conversations. The benchmark projection provides an initial quantifiable target for pilot success criteria and accountability during rollout.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 7,
+      "placeholder_id": "SLIDE_07_ROLLOUT",
+      "title": "Rollout Plan",
+      "subtitle": "Phased launch with measurable checkpoints",
+      "bullets": [
+        "Week 1 aligns pilot scope and baseline metrics",
+        "Weeks 2-3 run active manager enablement",
+        "Week 4 evaluates outcomes and expansion fit"
+      ],
+      "proof_point": "Prior enablement pilot hit 95% manager participation.",
+      "speaker_notes": "This rollout plan is intentionally lightweight and measurable. The first phase defines baseline metrics so performance can be assessed against agreed targets. The middle phase focuses on manager habits, because adoption quality determines whether output improves decisions. Final evaluation compares observed changes in review speed, confidence, and deal progression. High participation in prior enablement work indicates execution risk is manageable if ownership and communication are explicit from the start.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Rollout Plan",
+        "SUBTITLE": "Phased launch with measurable checkpoints",
+        "BULLET_1": "Week 1 aligns pilot scope and baseline metrics",
+        "BULLET_2": "Weeks 2-3 run active manager enablement",
+        "BULLET_3": "Week 4 evaluates outcomes and expansion fit",
+        "PROOF_POINT": "Prior enablement pilot hit 95% manager participation.",
+        "SPEAKER_NOTES": "This rollout plan is intentionally lightweight and measurable. The first phase defines baseline metrics so performance can be assessed against agreed targets. The middle phase focuses on manager habits, because adoption quality determines whether output improves decisions. Final evaluation compares observed changes in review speed, confidence, and deal progression. High participation in prior enablement work indicates execution risk is manageable if ownership and communication are explicit from the start.",
+        "OPEN_QUESTIONS": ""
+      }
+    },
+    {
+      "slide_number": 8,
+      "placeholder_id": "SLIDE_08_CLOSE_AND_QA",
+      "title": "Decision and Next Steps",
+      "subtitle": "Approve pilot and finalize execution owners",
+      "bullets": [
+        "Confirm pilot region and participant list",
+        "Set measurable success criteria",
+        "Schedule executive checkpoint"
+      ],
+      "proof_point": "Leadership review cycle shortened by 2 days in a comparable pilot.",
+      "speaker_notes": "The close asks for a bounded decision and explicit ownership. Rather than requesting broad commitment, we ask for a focused pilot approval tied to clear checkpoints and success measures. This keeps risk low while creating enough signal to determine expansion readiness. The comparable review-cycle outcome demonstrates that execution discipline can produce fast organizational benefit. The final message is simple: approve the pilot, assign owners, and track outcomes against agreed metrics.",
+      "open_questions": [],
+      "template_bindings": {
+        "TITLE": "Decision and Next Steps",
+        "SUBTITLE": "Approve pilot and finalize execution owners",
+        "BULLET_1": "Confirm pilot region and participant list",
+        "BULLET_2": "Set measurable success criteria",
+        "BULLET_3": "Schedule executive checkpoint",
+        "PROOF_POINT": "Leadership review cycle shortened by 2 days in a comparable pilot.",
+        "SPEAKER_NOTES": "The close asks for a bounded decision and explicit ownership. Rather than requesting broad commitment, we ask for a focused pilot approval tied to clear checkpoints and success measures. This keeps risk low while creating enough signal to determine expansion readiness. The comparable review-cycle outcome demonstrates that execution discipline can produce fast organizational benefit. The final message is simple: approve the pilot, assign owners, and track outcomes against agreed metrics.",
+        "OPEN_QUESTIONS": ""
+      }
+    }
+  ]
+}

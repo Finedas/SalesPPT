@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://salesppt.local/schemas/pitch-ingredients.json",
+  "title": "PitchIngredients",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "product_name",
+    "audience",
+    "problem_statement",
+    "value_proposition",
+    "differentiators",
+    "proof_inputs",
+    "business_impact",
+    "recommended_next_step",
+    "missing_details"
+  ],
+  "properties": {
+    "product_name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["buyer", "user", "segment"],
+      "properties": {
+        "buyer": { "type": "string", "maxLength": 140 },
+        "user": { "type": "string", "maxLength": 140 },
+        "segment": { "type": "string", "maxLength": 140 }
+      }
+    },
+    "problem_statement": { "type": "string", "maxLength": 400 },
+    "value_proposition": { "type": "string", "maxLength": 400 },
+    "differentiators": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": { "type": "string", "maxLength": 180 }
+    },
+    "proof_inputs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": { "type": "string", "maxLength": 200 }
+    },
+    "business_impact": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": { "type": "string", "maxLength": 180 }
+    },
+    "objections": {
+      "type": "array",
+      "maxItems": 5,
+      "items": { "type": "string", "maxLength": 180 },
+      "default": []
+    },
+    "recommended_next_step": { "type": "string", "maxLength": 180 },
+    "missing_details": {
+      "type": "array",
+      "maxItems": 10,
+      "items": { "type": "string", "maxLength": 180 }
+    }
+  }
+}

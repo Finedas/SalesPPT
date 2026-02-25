@@ -1,0 +1,27 @@
+{
+  "product_name": "DealFlow Navigator",
+  "audience": {
+    "buyer": "VP Sales",
+    "user": "Account Executives",
+    "segment": "Mid-market B2B SaaS"
+  },
+  "problem_statement": "Sales teams lose deals because discovery notes are inconsistent and key risks are missed.",
+  "value_proposition": "DealFlow Navigator turns transcript data into repeatable, high-quality deal coaching.",
+  "differentiators": [
+    "Transcript-native signal extraction",
+    "Stage-specific risk scoring"
+  ],
+  "proof_inputs": [
+    "Pilot group reported faster prep",
+    "Reference customer expanded license"
+  ],
+  "business_impact": [
+    "Improved forecast confidence",
+    "Reduced onboarding ramp time"
+  ],
+  "objections": [
+    "Change management for sales managers"
+  ],
+  "recommended_next_step": "Run a 30-day pilot in one region",
+  "missing_details": []
+}
