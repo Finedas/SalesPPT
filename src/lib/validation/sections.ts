@@ -35,6 +35,21 @@ export function validateSectionField(name: string, text: string): string[] {
   return issues;
 }
 
+export function validateSingleSection(key: keyof ExecutiveSections, text: string): ValidationResult {
+  const issues = validateSectionField(key, text);
+  return {
+    valid: issues.length === 0,
+    issues
+  };
+}
+
+export function summarizeSectionValidationIssues(issues: string[]) {
+  return {
+    underWordMinimum: issues.some((issue) => issue.includes(`must be ${SECTION_WORD_MIN}-${SECTION_WORD_MAX} words`)),
+    tooManyParagraphs: issues.some((issue) => issue.includes(`no more than ${SECTION_PARAGRAPH_MAX} paragraphs`))
+  };
+}
+
 export function validateSections(sections: unknown): ValidationResult {
   const parsed = executiveSectionsSchema.safeParse(sections);
   const issues: string[] = [];

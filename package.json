@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean-install": "node scripts/clean-install.mjs",
+    "setup": "node scripts/setup.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
