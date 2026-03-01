@@ -1,7 +1,19 @@
-# Environment variables
-.env
+# dependencies
+node_modules/
+
+# next build
+.next/
+out/
+
+# local env
 .env.example
-node_modules/
-node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# coverage and build artifacts
+coverage/
 dist/
 build/

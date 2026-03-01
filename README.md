@@ -1,40 +1,16 @@
-# SalesPPT Backend Service
+# Executive Pitch Generator
 
-Production-ready backend module for generating an 8-slide sales deck JSON payload from a transcript.
+A local Next.js application that converts a pasted project transcript into six executive sections, lets the user edit them, and renders a one or two slide executive pitch in-browser.
 
-## Features
+## Prerequisites
 
-- `POST /generate_deck` accepts transcript as JSON (`transcript`) or multipart (`transcript` field or `transcript_file` upload)
-- Two OpenAI Responses API calls with strict JSON Schema output:
-  - Transcript -> `PitchIngredients`
-  - `PitchIngredients` -> fixed `SlideContent` (8 slides)
-- Hard template validation:
-  - 8 slides exactly
-  - title <= 42 chars
-  - subtitle <= 70 chars
-  - max 3 bullets per slide, each <= 90 chars
-  - speaker notes 60-120 words
-  - proof point required with metric/credible proof signal
-  - open questions enforced when details are missing
-- Renderer mapping into exact placeholder keys:
-  - `TITLE`, `SUBTITLE`, `BULLET_1`, `BULLET_2`, `BULLET_3`, `PROOF_POINT`, `SPEAKER_NOTES`, `OPEN_QUESTIONS`
-- Retries, logging, and env validation
+- Node.js 20+
+- npm 10+
+- OpenAI API key
 
-## Project Layout
+## Environment Variables
 
-- `/src/routes/generateDeck.ts` API endpoint
-- `/src/services/deckPipeline.ts` two-stage LLM pipeline
-- `/src/openai/client.ts` OpenAI Responses integration + retries
-- `/src/validation/schemaValidator.ts` AJV schema checks
-- `/src/validation/constraints.ts` hard template limit enforcement
-- `/src/renderer/mapToTemplate.ts` PPT placeholder mapping
-- `/src/schemas/pitchIngredients.schema.json` strict Pitch Ingredients schema
-- `/src/schemas/slideContent.schema.json` strict Slide Content schema
-- `/tests/*` schema, constraints, open-questions, and pipeline tests
-
-## Environment
-
-Copy `.env.example` to `.env` and set values:
+Create `.env` from `.env.example`.
 
 ```bash
 cp .env.example .env
@@ -46,24 +22,25 @@ Required:
 
 Optional:
 
-- `OPENAI_MODEL` (default `gpt-4.1-mini`)
-- `PORT` (default `3000`)
-- `LOG_LEVEL` (default `info`)
-- `MAX_TRANSCRIPT_CHARS` (default `30000`)
-- `OPENAI_MAX_RETRIES` (default `3`)
-- `OPENAI_RETRY_BASE_MS` (default `500`)
+- `OPENAI_MODEL` default: `gpt-4.1-mini`
+- `OPENAI_MAX_RETRIES` default: `3`
+- `OPENAI_RETRY_BASE_MS` default: `500`
+- `NEXT_PUBLIC_APP_NAME` default: `Executive Pitch Generator`
+- `LOG_LEVEL` default: `info`
 
-## Run
+## Setup
 
 ```bash
 npm install
+```
+
+## Run Locally
+
+```bash
 npm run dev
 ```
 
-Server:
-
-- `http://localhost:3000`
-- Health check: `GET /health`
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Test
 
@@ -71,17 +48,62 @@ Server:
 npm test
 ```
 
-## Example Request
+## API Routes
 
-```bash
-curl -X POST http://localhost:3000/generate_deck \
-  -H "Content-Type: application/json" \
-  -d '{"transcript":"<paste transcript>"}'
+### `POST /api/generate-sections`
+
+Request:
+
+```json
+{
+  "transcript": "<project transcript>"
+}
 ```
 
-Multipart with file:
+Response:
 
-```bash
-curl -X POST http://localhost:3000/generate_deck \
-  -F "transcript_file=@./transcript.txt"
+```json
+{
+  "companyBackground": "...",
+  "solution": "...",
+  "challenge": "...",
+  "summary": "...",
+  "implementation": "...",
+  "results": "..."
+}
 ```
+
+### `POST /api/generate-slides`
+
+Request:
+
+```json
+{
+  "sections": {
+    "companyBackground": "...",
+    "solution": "...",
+    "challenge": "...",
+    "summary": "...",
+    "implementation": "...",
+    "results": "..."
+  }
+}
+```
+
+Response:
+
+```json
+{
+  "slideCount": 1,
+  "slide1": {
+    "variant": "single-slide-brief",
+    "title": "Executive Summary"
+  }
+}
+```
+
+## Notes
+
+- The app uses the OpenAI Responses API with strict JSON schema outputs for both generation stages.
+- No mock mode is included. A real OpenAI API key is required.
+- Slides render directly in the browser and are styled for print / PDF output.
